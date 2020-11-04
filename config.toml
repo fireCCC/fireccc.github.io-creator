@@ -2,11 +2,18 @@
 # If you want to see the full configuration, please check `full-config.toml` .
 # And see https://gohugo.io/getting-started/configuration/ .
 
-baseURL = "http://localhost:1313"
-title = "Jane - A super concise theme for Hugo"
+baseURL = "http://wantsuchen.top/"
+title = "Jane"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
+
+# Highlight options.
+# See https://gohugo.io/content-management/syntax-highlighting/
+PygmentsCodeFences = true # Enable syntax highlighting with GitHub flavoured code fences
+PygmentsUseClasses = true # Use CSS classes to format highlighted code
+PygmentsCodefencesGuessSyntax = true
+PygmentsOptions = "linenos=table"
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 3              # Number of articles displayed on the homepage  # 首页每页显示的文章数
@@ -58,6 +65,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   since = "2019"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
+  unsafe = true
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "Aquiver（//▽//）"        # default: the title value    # 默认值: 上面设置的title值
@@ -89,6 +97,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     repo = 'blog-comments'
     clientId = 'b35e48ecbe0899a0fa7e'
     clientSecret = 'c678475b154aac32a70a413cc86620ff11930dbf'
+  
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
     b-stack-overflow = "http://localhost:1313"
@@ -107,4 +116,4 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     o-goodreads = "http://localhost:1313"
     p-coding = "http://localhost:1313"
     q-bilibili = "http://localhost:1313"
-    r-codeforces = "http://localhost:1313"
+    r-codeforces = "#"

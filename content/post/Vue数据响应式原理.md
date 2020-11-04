@@ -3,7 +3,7 @@ title: "Vue数据响应式原理"
 date: 2020-01-22T13:34:36+08:00
 draft: false
 comment: true   # 评论
-reward: true	 # 打赏
+reward: false	 # 打赏
 tags: ["Vue数据响应式原理"]  # 标签
 categories: ["Vue"]              # 分类
 ---
